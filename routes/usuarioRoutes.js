@@ -6,5 +6,6 @@ const router = express.Router();
 // Creacion Usuarios
 router.post('/', registrandoUsuario); // registrandoUsuario
 router.post('/login', autenticar); // autenticar usuario
+router.post('/confirmar/:n', autenticar); // autenticar usuario
 
 export default router
