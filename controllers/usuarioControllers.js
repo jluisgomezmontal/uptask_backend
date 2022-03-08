@@ -53,3 +53,9 @@ export const autenticar = async(req, res ) => {
     }
     
 }
+
+
+export const confirmar = async (req, res) => {
+    const { token } = req.params
+    const usuarioConfirmar = await Usuario.findOne({ token })
+}
